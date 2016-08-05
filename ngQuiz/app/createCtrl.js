@@ -1,4 +1,4 @@
-﻿app.controller('createCtrl', ['$scope', '$http', function ($scope, $http) {
+app.controller('createCtrl', ['$scope', '$http', function ($scope, $http) {
     $scope.quizName = 'js/emptyQuiz.js';
     $scope.goTo = function (index) {
         if (index > 0 && index <= $scope.totalItems) {
@@ -24,6 +24,7 @@
     };
 
     //If you wish, you may create a separate factory or service to call loadQuiz. To keep things simple, i have kept it within controller.
+
     $scope.loadQuiz = function (file) {
         $http.get(file)
          .then(function (res) {

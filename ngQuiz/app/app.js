@@ -26,6 +26,11 @@ angular.module('quizApp')
               url: '/create',
               template: 'templates/create.html',
               controller: 'createCtrl'
+          },
+           {
+              url: '/login',
+              template: 'templates/loginPage.html'
+            
           }
       ];
 
